@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="refresh" content="600">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Pannello di casa</title>
+<style>
+/* Solo CSS semplice: il browser del Kindle e' vecchio. Solo bianco, nero e grigi. */
+body{margin:0;padding:8px 12px 70px;background:#fff;color:#000;font-family:Georgia,"Times New Roman",serif;font-size:20px;line-height:1.3}
+h2{font-size:22px;margin:0 0 6px;padding-top:10px;border-top:3px solid #000}
+.ora{font-family:Helvetica,Arial,sans-serif;font-size:96px;font-weight:bold;text-align:center;line-height:1;margin:6px 0 0}
+.data{text-align:center;font-size:24px;padding-bottom:8px}
+.meteo{overflow:hidden;padding:6px 0}
+.temp{float:left;font-family:Helvetica,Arial,sans-serif;font-size:64px;font-weight:bold;margin-right:16px}
+.cond{font-size:26px;font-weight:bold}
+table{width:100%;border-collapse:collapse}
+td{padding:6px 4px;border-bottom:1px solid #888;vertical-align:top}
+td.r{text-align:right;white-space:nowrap;font-weight:bold}
+.pic{font-size:16px;color:#444;font-weight:normal;display:block}
+.nav{position:fixed;left:0;right:0;bottom:0;background:#fff;border-top:3px solid #000;text-align:center;padding:6px 0;font-family:Helvetica,Arial,sans-serif}
+.nav a{display:inline-block;padding:8px 10px;margin:0 2px;border:2px solid #000;color:#000;text-decoration:none;font-size:16px}
+.agg{font-size:14px;color:#444;text-align:center;margin-top:10px}
+</style>
+</head>
+<body>
+
+<div id="oggi">
+<p class="ora">09:24</p>
+<p class="data">Lunedì 26 ottobre</p>
+<div class="meteo"><span class="temp">15°</span><span class="cond">Poco nuvoloso</span><br>Min 11° · max 20° · vento 3 km/h · pioggia 0%</div>
+<table>
+<tr><td>Casa → Studio Firenze</td><td class="r">28 min<span class="pic">+2 min di traffico</span></td></tr>
+<tr><td>Casa → Scuola</td><td class="r">4 min<span class="pic">regolare</span></td></tr>
+</table>
+</div>
+
+<div id="scuola">
+<h2>Scuola e mensa</h2>
+<table>
+<tr><td>Marco</td><td>Italiano, Matematica, Inglese, Ed. fisica</td></tr>
+<tr><td>Giulia</td><td>Storia, Scienze, Arte</td></tr>
+<tr><td>Mensa</td><td>Pasta al pomodoro, frittata, insalata, frutta</td></tr>
+</table>
+</div>
+
+<div id="agenda">
+<h2>Agenda</h2>
+<table>
+<tr><td class="r">16:30</td><td>Nuoto Marco</td></tr>
+<tr><td class="r">18:00</td><td>Riunione di classe</td></tr>
+<tr><td class="r">Domani</td><td>Dentista Giulia, ore 15:00</td></tr>
+</table>
+</div>
+
+<div id="dafare">
+<h2>Da fare</h2>
+<table>
+<tr><td>☐ Comprare il pane</td></tr>
+<tr><td>☐ Ritirare il pacco</td></tr>
+<tr><td>☐ Pagare la retta della mensa</td></tr>
+</table>
+</div>
+
+<p class="agg">Aggiornato 26/10 09:23</p>
+
+<div class="nav">
+<a href="#oggi">Oggi</a><a href="#scuola">Scuola</a><a href="#agenda">Agenda</a><a href="#dafare">Da fare</a>
+</div>
+</body>
+</html>
